@@ -8,3 +8,5 @@
 - **Perfect** practice, makes perfect
 - What better way to deepen my understanding of the language than to use it? 
 - I love competition
+
+## :notebook: Some Notes 
