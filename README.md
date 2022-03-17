@@ -10,4 +10,4 @@
 - I love competition
 
 ## :notebook: Some Notes 
-At the moment all the challenges here are Codewars katas. I keep note of their names and their instructions. But if you want to work on the same kata as yours truly heres a link to my [profile](https://www.codewars.com/users/Colclough7)
+At the moment all the challenges here are Codewars katas. I keep note of their names and their instructions. But if you want to work on the same kata as yours truly heres a link to my [profile](https://www.codewars.com/users/Colclough7/completed).
