@@ -1,2 +1,2 @@
-# daily_coding_challenges
+# Daily Coding Challenges
 Daily coding challenges code 
