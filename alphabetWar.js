@@ -24,43 +24,7 @@ alphabetWar("wwwwwwz");  //=> Left side wins!
 
 function alphabetWar(fight)
 {
-  const left_side={
-    'w': 4,
-    'p': 3,
-    'b': 2,
-    's': 1
-  }
-  
-  const right_side={
-    'm': 4,
-    'q': 3,
-    'd': 2,
-    'z': 1
-  }
-  
-  let countRight = 0
-  let countLeft = 0
-  
-  for(let char of fight){
-    
-    if(char in left_side){
-      countLeft += left_side[char]
-    }
-    
-    if(char in right_side){
-      countRight += right_side[char]
-    }    
-    
-  }
-  
-  
-  if(countLeft > countRight){
-     return "Left side wins!"
-  }
- 
-  if (countLeft < countRight){
-    return "Right side wins!" 
-  }
-    
-   return "Let's fight again!";
+  let map = { w: -4, p: -3, b: -2, s: -1, m: 4, q: 3, d: 2, z: 1 };
+    let result = fight.split('').reduce((a, b) => a + (map[b] || 0), 0);
+    return result ? (result < 0 ? "Left" : "Right") + " side wins!" : "Let's fight again!";
 }
