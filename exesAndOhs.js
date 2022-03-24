@@ -12,5 +12,6 @@
 
 
 function XO(str) {
-    //code
+    let arr = str.toLowerCase().split('');
+  return arr.filter(element => element == 'x').length == arr.filter(element => element == 'o').length;
 }
