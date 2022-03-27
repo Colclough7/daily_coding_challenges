@@ -21,7 +21,7 @@ function evaporator(content, evap_per_day, threshold){
     percentage = percentage - percentage * (evap_per_day / 100);
     result += 1;
   }
-  return result;
+  return 
 }
 
 
