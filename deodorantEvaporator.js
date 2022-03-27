@@ -14,5 +14,15 @@
 //Some people might prefer to reason with content, some other with percentages only. 
 //It's up to you but you must keep it as a parameter because the tests have it as an argument.
 
+function evaporator(content, evap_per_day, threshold){ 
+  let result = 0;
+  let percentage = 100;  
+  while (percentage > threshold) {
+    percentage = percentage - percentage * (evap_per_day / 100);
+    result += 1;
+  }
+  return result;
+}
+
 
 
