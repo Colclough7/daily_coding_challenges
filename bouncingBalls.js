@@ -30,3 +30,4 @@ function bouncingBall(h,  bounce,  window) {
     } else {
         return -1;
     }
+}
