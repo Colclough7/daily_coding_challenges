@@ -17,4 +17,4 @@
 onst vowels = ['a', 'e', 'i', 'o', 'u']
 
 const encode = string => [...string].map(character => vowels.indexOf(character) + 1 || character).join('')
-const decode = string => [...string].map(character => vowels[Number(character) - 1] || character).join(''z
+const decode = string => [...string].map(character => vowels[Number(character) - 1] || character).join('')
