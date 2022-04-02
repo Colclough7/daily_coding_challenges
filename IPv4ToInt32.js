@@ -12,3 +12,15 @@
 
 
 
+
+//ipToInt32("128.32.10.1") => 2149583361
+
+
+
+function ipToInt32(ip){
+  return ip.split(".").reduce((int,v)=> int*256 + +v)
+}
+
+
+
+
