@@ -25,6 +25,9 @@ A size 5 diamond:
 
 "  *\n ***\n*****\n ***\n  *\n"
 */
+
+
+
 function diamond(n){
   if (n < 0 || !(n % 2)) return null; 
   const middleIndex = Math.floor(n / 2);
