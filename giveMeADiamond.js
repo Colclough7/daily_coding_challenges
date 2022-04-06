@@ -36,4 +36,5 @@ function diamond(n){
         return Array(indentation + 1).join(' ') + Array(numberOfAsterisks + 1).join('*');
       })
       .join('\n') + '\n';
+}
 
