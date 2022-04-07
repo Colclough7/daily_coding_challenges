@@ -36,12 +36,30 @@ See Examples Test Cases for more examples.
 */
 
 function rank(st, we, n) {
-  let names = st.split(",");
-  if (!st.length) return "No participants";
-  if (names.length < n) return "Not enough participants";
-  return names.map((_, i) => ({name: _,s: 
-    [..._.toLowerCase()].reduce((a, b) => a + b.charCodeAt() - 95, 0) * we[i]
-    })).sort((a, b) => a.name > b.name).sort((a, b) => b.s - a.s)[n - 1].name;
+   if (st.length === 0) {
+    return 'No participants';
+  }
+  if (st.split(',').length < n) {
+    return 'Not enough participants';
+  }
+  
+  const names = st.split(',');
+  const weightedNameList = names.map((name, i) => {
+    return [
+      names[i],
+      (name.length + name.toLowerCase()
+        .split('')
+        .reduce((acc, cur) => acc + cur.charCodeAt(0) - 96, 0)) * we[i],
+    ];
+  });
+  
+  weightedNameList.sort((a, b) => {
+    if (b[1] === a[1]) {
+      return a[0].localeCompare(b[0]);
+    }
+    return b[1] - a[1];
+  });
+  
+  return weightedNameList[n - 1][0];
 }
-
 
