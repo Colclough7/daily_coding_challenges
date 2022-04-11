@@ -33,4 +33,4 @@ function revrot(str, sz) {
     .map((v) => (isEven(v) ? reverse(v) : rotate(v)))
     .join('');
 
-
+}
