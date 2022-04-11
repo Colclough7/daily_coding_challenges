@@ -32,5 +32,5 @@ function revrot(str, sz) {
   return (str.match(new RegExp(`.{${sz}}`, 'g')) || [])
     .map((v) => (isEven(v) ? reverse(v) : rotate(v)))
     .join('');
-}
+
 
