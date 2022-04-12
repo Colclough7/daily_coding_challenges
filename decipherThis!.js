@@ -16,5 +16,5 @@ const decipherThis = (str) => {
    return word.replace( /^\d+/, char => String.fromCharCode(char) )
       .replace(/^(.)(.)(.*)(.)$/, '$1$4$3$2')
   }).join(" ")
-
+}
 
