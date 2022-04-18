@@ -16,6 +16,6 @@ function disemvowel(str) {
     .split('')
     .filter(el => vowels.indexOf(el.toLowerCase()) == -1)
     .join('');
-}
+
 
 
