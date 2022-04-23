@@ -7,4 +7,4 @@ function find_average(array) {
   else{
    return array.reduce((a, b) => (a + b)) / array.length;
   }
-}
+
