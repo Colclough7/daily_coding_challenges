@@ -19,3 +19,7 @@ In case of an empty array return 0. You will not be tested with invalid input (i
 Order of the face (eyes, nose, mouth) elements will always be the same.*/
 
 
+function countSmileys(arr) {
+return arr.reduce((total, i) => total + /[:;][-~]?[)D]/.test(i), 0);
+}
+
