@@ -5,5 +5,5 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 
 function isPangram(string){
   return (string.match(/([a-z])(?!.*\1)/ig) || []).length === 26;
-}
+
 
