@@ -5,3 +5,6 @@ Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 re
 Example:
 n= 5, m=5: 25*/
 
+function paperwork(n, m) {
+  return (n < 0 || m < 0)? 0: n*m
+}
