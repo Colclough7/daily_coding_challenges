@@ -11,3 +11,8 @@ Examples (a, b) --> output (explanation)
 (-1, 0) --> -1 (-1 + 0 = -1)
 (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)*/
 
+function getSum( a,b ){
+   let min = Math.min(a, b),
+      max = Math.max(a, b);
+  return (max - min + 1) * (min + max) / 2;
+}
