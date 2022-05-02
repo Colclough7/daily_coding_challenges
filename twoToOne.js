@@ -8,3 +8,9 @@ longest(a, b) -> "abcdefklmopqwxy"
 
 a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"*/
+
+
+function longest(s1, s2) {
+  let newArray = [...new Set(s1+s2)]
+  return newArray.sort().join('')
+}
