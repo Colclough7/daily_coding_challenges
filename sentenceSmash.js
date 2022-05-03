@@ -5,3 +5,8 @@ Be careful, there shouldn't be a space at the beginning or the end of the senten
 
 Example
 ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'*/
+
+
+function smash (words) {
+   return words.join(' ')
+};
