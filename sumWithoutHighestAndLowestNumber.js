@@ -15,7 +15,7 @@ If an empty value ( null, None, Nothing etc. ) is given instead of an array,
 
 
 function sumArray(array) {
-return !array || array.length==0?0:array.sort((a,b)=> a - b).slice(1,array.length - 1).reduce((acc,curr)=> acc + curr,0)
+return !array || array.length==0?0:array.sort((a,b)=> a - b).slice(1,array.length - 1).reduce((prev,curr)=> prev + curr,0)
 }
 
 
