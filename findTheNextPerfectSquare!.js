@@ -10,3 +10,9 @@ Examples:(Input --> Output)
 121 --> 144
 625 --> 676
 114 --> -1 since 114 is not a perfect square*/
+
+
+
+function findNextSquare(sq) {
+return Math.sqrt(sq)%1===0 ? Math.pow(Math.sqrt(sq)+1,2) : -1
+}
