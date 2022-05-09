@@ -28,3 +28,21 @@ There is only ONE queue serving many tills, and
 The order of the queue NEVER changes, and
 The front person in the queue (i.e. the first element in the array/list) proceeds to a till as soon as it becomes free.
 N.B. You should assume that all the test input will be valid, as specified above.*/
+
+
+function queueTime(customers, n) {
+  let booths = [];
+  for (let b = 0; b < n; b++) {
+    booths[b] = 0;
+  }
+  //iterate through customers and add each one to the shortest queue
+  customers.forEach(e => {
+    let bestBooth = booths.indexOf(Math.min(...booths));
+    booths[bestBooth] += e;
+  });
+  //find the longest queue in booths
+  return Math.max(...booths);
+}
+
+
+
