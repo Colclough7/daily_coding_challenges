@@ -8,3 +8,12 @@ If the list is made up of only negative numbers, return 0 instead.
 Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.*/
 
 
+let maxSequence = function(arr){
+   let currentSum = 0;
+    return arr.reduce(function(maxSum, number){
+        currentSum = Math.max(currentSum+number, 0);
+        return Math.max(currentSum, maxSum);
+    }, 0);
+}
+
+
