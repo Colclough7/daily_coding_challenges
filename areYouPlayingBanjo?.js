@@ -6,3 +6,11 @@ The function takes a name as its only argument, and returns one of the following
 name + " plays banjo" 
 name + " does not play banjo"
 Names given are always valid strings.*/
+
+
+
+
+function areYouPlayingBanjo(name) {
+  // Implement me
+  return name[0].toLowerCase() === 'r'? `${name} plays banjo`:`${name} does not play banjo`
+}
