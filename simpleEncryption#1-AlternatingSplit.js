@@ -30,3 +30,21 @@ function encrypt(text, n) {
   }
   return text;
 }
+
+
+function decrypt(encryptedText, n) {
+   if (!encryptedText || n <= 0) return encryptedText;
+  const ans = new Array(encryptedText.length);
+  while (n--) {
+    let j = 0;
+    for (let i = 1; i < ans.length; i += 2) {
+      ans[i] = encryptedText[j++];
+    }
+    for (let i = 0; i < ans.length; i += 2) {
+      ans[i] = encryptedText[j++];
+    }
+    encryptedText = ans.join('');
+  }
+  return encryptedText;
+
+}
