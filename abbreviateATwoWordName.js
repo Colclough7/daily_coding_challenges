@@ -7,3 +7,9 @@ It should look like this:
 Sam Harris => S.H
 
 patrick feeney => P.F*/
+
+
+
+function abbrevName(name){
+return name.split(" ").map(el => el[0].toUpperCase()).join(".")
+}
