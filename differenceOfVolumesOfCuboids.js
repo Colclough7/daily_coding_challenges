@@ -10,3 +10,17 @@ Your function will be tested with pre-made examples as well as random ones.
 If you can, try writing it in one line of code.*/
 
 
+
+function findDifference(arr1, arr2) {
+  let result1 = arr1[0];
+  let result2 = arr2[0];
+  for (let i = 1; i < arr1.length; i++) {
+    result1 *= arr1[i];
+  }
+  for (let j = 1; j < arr2.length; j++) {
+    result2 *= arr2[j];
+  }
+  return Math.abs(result1 - result2);
+}
+
+
