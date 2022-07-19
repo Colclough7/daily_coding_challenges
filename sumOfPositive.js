@@ -3,3 +3,7 @@
 Example [1,-4,7,12] => 1 + 7 + 12 = 20
 
 Note: if there is nothing to sum, the sum is default to 0.*/
+
+function positiveSum(arr) {
+  return arr.filter(num=> num > -1 || 0).reduce((acc,curr)=> acc+ curr,0)
+}
