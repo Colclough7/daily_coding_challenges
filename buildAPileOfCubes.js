@@ -10,3 +10,12 @@ Examples:
 findNb(1071225) --> 45
 
 findNb(91716553919377) --> -1*/
+
+
+function findNb(m) {
+    let n = parseInt(Math.sqrt(2 * (Math.sqrt(m)))) - 1;
+    while ( ((n * (n+1))/2) ** 2 < m ) {
+      n++;
+    }
+    return ((n * (n+1))/2) ** 2 > m ? -1 : n;
+}
