@@ -18,3 +18,29 @@ In Fortran - as in any other language -
 the returned string is not permitted to contain any redundant trailing whitespace: you can use dynamically allocated character strings.*/
 
 
+
+
+const listSquared = (m, n) => {
+  const result = [];
+  for (let i = m; i <= n; i++) {
+    const divisorsOfi = [];
+    for (let j = 0; j <= Math.sqrt(i); j++) {
+      if (i % j === 0) {
+        divisorsOfi.push(Math.pow(j, 2));
+        if (i/j != j)
+          divisorsOfi.push(Math.pow(i/j, 2));
+
+      }
+    }
+    let sumOfDivisorsOfi = 1;
+    if (divisorsOfi.length > 1) {
+      sumOfDivisorsOfi = divisorsOfi.reduce((a, b) => a + b);
+    }
+    if (Number.isInteger(Math.sqrt(sumOfDivisorsOfi))) {
+      result.push([i, sumOfDivisorsOfi]);
+    }
+  }
+  return result;
+}
+
+
