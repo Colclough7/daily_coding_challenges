@@ -16,3 +16,7 @@ Should return
 Since the 3rd word is 'string'(starting from 0 remember) and the third paramater indicates that it should be repeated 5 times.
 
 Simple. Good luck.*/
+
+function modifyMultiply (str,loc,num) {
+  return (str.split(' ')[loc]+'-').repeat(num).slice(0,-1)
+} 
