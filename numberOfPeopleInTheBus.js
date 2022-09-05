@@ -11,3 +11,13 @@ Take a look on the test cases.
 Please keep in mind that the test cases ensure that the number of people in the bus is always >= 0. So the return integer can't be negative.
 
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.*/
+
+
+
+var number = function(busStops){
+  var people = 0;
+  for (let stop of busStops) {
+    people += stop[0] - stop[1];
+  }
+  return people;
+}
