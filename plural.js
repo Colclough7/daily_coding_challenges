@@ -7,3 +7,8 @@ it is plural (not one of something).
 
 All values will be positive integers or floats, or zero.*/
 
+
+
+function plural(n) {
+  return n != 1
+}
