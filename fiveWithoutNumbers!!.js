@@ -3,3 +3,10 @@
 Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
 
 Good luck :)*/
+
+
+
+function unusualFive() {
+  let name = 'erica'
+  return name.length 
+}
