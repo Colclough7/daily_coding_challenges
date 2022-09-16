@@ -8,3 +8,16 @@ arr(5) // => [0,1,2,3,4]
 
 Note: The parameter is optional. So you have to give it a default value.*/
 
+
+
+const arr = N => {
+  let filledArr = [];
+  if (typeof N === 'number') {
+    filledArr.push(0);
+    for ( i = 1; i < N; i++){
+      filledArr.push(filledArr[i-1] + 1);
+    }
+  }
+  return filledArr;
+}
+
