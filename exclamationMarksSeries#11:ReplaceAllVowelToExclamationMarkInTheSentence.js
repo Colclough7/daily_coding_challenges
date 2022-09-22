@@ -9,3 +9,15 @@ replace("aeiou") === "!!!!!"
 replace("ABCDE") === "!BCD!"*/
 
 
+
+function replace(s){
+ return s.replace(/[aeoiu]/ig, '!')  
+  
+  
+}
+
+
+
+
+
+
