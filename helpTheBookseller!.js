@@ -20,3 +20,20 @@ For the lists L and M of example you have to return the string (in Haskell/Cloju
 where A, B, C, W are the categories, 20 is the sum of the unique book of category A, 114 the sum corresponding to "BKWRK" and "BTSQZ", 50 corresponding to "CDXEF" and 0 to category 'W' since there are no code beginning with W.
 
 If L or M are empty return string is "" (Clojure/Racket/Prolog should return an empty array/list instead).*/
+
+
+
+function stockList(listOfArt, listOfCat){
+  let totalAmountOfBooks = 0 
+  const cats = listOfCat.map(c => {
+    const stockListsWithCat = listOfArt.filter(sl => sl.indexOf(c) === 0)
+    const booksInStockList = stockListsWithCat.map(sl => parseInt(sl.split(' ')[1]))
+    const amountOfBooks = booksInStockList.reduce( (acc, curr) => {
+      return acc + curr
+    }, 0)
+    totalAmountOfBooks += amountOfBooks
+    return `(${c} : ${amountOfBooks})`
+  })
+  if (totalAmountOfBooks === 0) return ''
+  return cats.join(' - ')
+}
