@@ -5,3 +5,15 @@ For example:
 a = 1
 b = 4
 --> [1, 2, 3, 4]*/
+
+
+
+
+
+function between(a, b) {
+  let results = []
+  for(let i = a;a<=b;a++){
+    results.push(a)
+  }
+  return results
+}
