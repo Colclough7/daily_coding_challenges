@@ -11,3 +11,18 @@ Get rid of them. Only the ending ones.
 Zero alone is fine, don't worry about it. Poor guy anyway*/
 
 
+
+function noBoringZeros(n) {
+  let str = n.toString().split('');
+
+    for (let i = 0; i <=str.length; i++){
+        if(str[str.length-1] == '0'){
+
+            str.pop();
+        }
+    }
+
+    return +str.join('')
+}
+
+
