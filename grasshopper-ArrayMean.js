@@ -15,3 +15,15 @@ For an example list of 1, 3, 5, 7
 3. The mean (or average) of this list is 4*/
 
 
+
+var findAverage = function (nums) {
+  // Code here
+ let acc = 0
+ 
+ for(const element of nums ){
+   acc+=element
+ }
+ return acc/nums.length
+}
+
+
