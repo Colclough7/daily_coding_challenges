@@ -8,3 +8,10 @@ forward to fight another specific given number of dragons, will he survive?
 Return True if yes, False otherwise :)*/
 
 
+
+function hero(bullets, dragons){
+return (dragons*2) > bullets?false:true
+}
+
+
+
