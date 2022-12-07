@@ -10,3 +10,12 @@ If the sperm contains the X chromosome, return "Congratulations! You're going to
 return "Congratulations! You're going to have a son.";*/
 
 
+
+
+
+
+function chromosomeCheck(sperm) {
+  return sperm.includes('XY')?`Congratulations! You're going to have a son.`
+  :`Congratulations! You're going to have a daughter.`
+}
+
