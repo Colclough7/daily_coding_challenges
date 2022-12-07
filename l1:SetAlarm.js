@@ -10,3 +10,9 @@ setAlarm(true, true) -> false
 setAlarm(false, true) -> false
 setAlarm(false, false) -> false
 setAlarm(true, false) -> true*/
+
+
+
+unction setAlarm(employed, vacation){
+  return employed && !vacation?true:false
+}
