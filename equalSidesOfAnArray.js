@@ -30,3 +30,23 @@ The lowest index N where the side to the left of N is equal to the side to the r
 If you do not find an index that fits these rules, then you will return -1.*/
 
 
+function findEvenIndex(arr){
+ let sum = 0,
+    leftSum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    sum -= arr[i];
+
+    if (leftSum === sum) {
+      return i;
+    }
+
+    leftSum += arr[i];
+  }
+
+  return -1;
+}
