@@ -8,3 +8,9 @@ Example: (Input1, Input2 -->Output)
 "2", "" --> "2"
 "-5", "3" --> "-2"*/
 
+
+
+function sumStr(a,b) {
+  let change = Number(a) + Number(b)
+  return change.toString()
+}
