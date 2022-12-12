@@ -8,3 +8,11 @@ sayHello(['John', 'Smith'], 'Phoenix', 'Arizona')
 
 This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona!*/
 
+
+
+
+
+function sayHello( name, city, state ) {
+  let newName = name.join(' ')
+  return `Hello, ${newName}! Welcome to ${city}, ${state}!`
+}
