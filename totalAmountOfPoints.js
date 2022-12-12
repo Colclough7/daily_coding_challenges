@@ -20,3 +20,15 @@ Notes:
     0 <= y <= 4*/
 
 
+
+
+
+
+function points(games) {
+  return games
+            .map(str => str.split(":").map(Number))
+            .map(([x,y]) => x > y ? 3 : x == y ? 1 : 0)
+            .reduce((acc, cur) => acc + cur, 0)
+}
+
+
