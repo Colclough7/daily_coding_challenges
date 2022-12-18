@@ -5,3 +5,10 @@ The returned value must be a string, and have "***" between each of its letters.
 
 You should not remove or add elements from/to the array.*/
 
+function twoSort(s) {
+const sorted = s.sort()
+  return sorted[0] 
+    .split("") 
+    .join("***")
+}
+
