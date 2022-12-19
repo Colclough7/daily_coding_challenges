@@ -8,3 +8,11 @@ Example (Input --> Output)
 "Hello World" --> "World Hello"
 "Hi There." --> "There. Hi"
 Happy coding!*/
+
+
+
+
+function reverse(string){
+  //your code here
+   return string.split(" ").reverse().join(" ")
+}
