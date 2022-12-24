@@ -17,10 +17,3 @@ Output: "even"
 Have fun!
 */
 
-function oddOrEven(arr) {
-    //enter code here
-   let sum = arr.reduce((a,b)=>a+b,0)
-   if(sum%2 === 0) return 'even'
-   else return 'odd'
-   //code end
- }
