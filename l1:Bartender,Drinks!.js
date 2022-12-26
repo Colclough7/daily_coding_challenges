@@ -12,3 +12,16 @@ Note: anything else is the default case: if the input to the function is not any
 
 Make sure you cover the cases where certain words do not show up with correct capitalization. For example, the input "pOLitiCIaN" should still return 
 "Your tax dollars".*/
+
+
+
+unction getDrinkByProfession(param){
+let input = param.toLowerCase() 
+if(input === "Jabroni".toLowerCase()) return 	"Patron Tequila"
+  else if(input === "School Counselor".toLowerCase()) return "Anything with Alcohol"
+  else if(input === "Programmer".toLowerCase()) return "Hipster Craft Beer"
+  else if(input === "Bike Gang Member".toLowerCase()) return "Moonshine"
+  else if(input === "Politician".toLowerCase()) return "Your tax dollars"
+  else if(input === "Rapper".toLowerCase()) return "Cristal"
+  else return "Beer"
+}
