@@ -7,3 +7,15 @@ returns a string representing the state the light should change to.
 For example, when the input is green, output should be yellow.*/
 
 
+
+
+
+
+
+
+function updateLight(current) {
+  //your code here!
+  if(current === 'green') return 'yellow'
+  else if(current === 'yellow') return 'red'
+  else return 'green'
+}
