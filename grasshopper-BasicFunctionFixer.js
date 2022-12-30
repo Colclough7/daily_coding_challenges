@@ -6,4 +6,7 @@ Can you help me fix the function?*/
 
 
 
-
+function addFive(num) {
+  var total = num + 5
+  return total
+}
