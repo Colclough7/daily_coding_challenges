@@ -33,3 +33,50 @@ gap(4, 130, 200) --> [163, 167] or (163, 167) or {163, 167}
 
 gap(6,100,110) --> nil or {0, 0} or ... : between 100 and 110 we have 101, 103, 107, 109 but 101-107is not a 6-gap because there is 103in between 
 and 103-109is not a 6-gap because there is 107in between.*/
+
+
+
+
+
+
+
+
+
+
+function gap(g, m, n) {
+    var lastPrime = 0;
+    var isPrime = function(x) { 
+      for (var i=2; i*i<=x; i++) { if (x % i == 0) return false; } return true;
+    }
+    
+    for(var i = m; i <= n; i++)
+        if(isPrime(i)) {
+            if(i - lastPrime == g) return [lastPrime, i];
+            else lastPrime = i;
+        }
+      
+    return null;
+}
+function gap(g, m, n) {
+  for(let i = m; i<= n;i++){
+    if(isPrime(i) && isPrime(i + g)){
+      let arr = Array(g - 1).fill().map((item, index) => i + index + 1)
+      if(arr.filter((item) => isPrime(item)).length > 0){
+        continue;
+      }else{
+        return [i, i+g];
+      }
+    }
+  }
+  return null;
+}
+
+function isPrime(num){
+  let mid = Math.ceil(Math.sqrt(num));
+  for(let i = 2; i <= mid; i++){
+    if(num % i == 0){
+      return false;
+    }
+  }
+  return true;
+}
