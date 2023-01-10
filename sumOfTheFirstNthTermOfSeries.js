@@ -13,3 +13,14 @@ Examples:(Input --> Output)
 1 --> 1 --> "1.00"
 2 --> 1 + 1/4 --> "1.25"
 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"*/
+
+
+
+
+function SeriesSum(n){
+  // Happy Coding ^_^
+  if(0 == n) return "0.00"
+  let s = 1;
+  for(let i=1; i<n; i++) s += 1/(1+3*i);
+  return `${s.toFixed(2)}`;
+}
