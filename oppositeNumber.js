@@ -11,6 +11,5 @@ Examples:
 
 function opposite(number) {
   //your code here
-  let oppNum = 0 - number
-return oppNum
+  return (-number)
 }
