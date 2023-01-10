@@ -6,3 +6,11 @@ Examples:
 14: -14
 -34: 34*/
 
+
+
+
+function opposite(number) {
+  //your code here
+  let oppNum = 0 - number
+return oppNum;
+}
