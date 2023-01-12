@@ -11,3 +11,9 @@ Input/Output
 A string consists of lowercase latin letters, digits and symbols.
 
 [output] a string*/
+
+
+function reverseLetter(str) {
+   return str.match(/[a-zA-Z]+/g).join('').split('').reverse().join(''); 
+  
+}
