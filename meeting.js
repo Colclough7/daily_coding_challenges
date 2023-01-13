@@ -14,3 +14,11 @@ So the result of function meeting(s) will be:
 It can happen that in two distinct families with the same family name two people have the same first name too.*/
 
 
+
+function meeting(s) {
+    // your code
+  return  s.replace(/;/gi,' ').split(' ').map(v=>v.split(':').reverse().join(', ').toUpperCase()).sort()
+   .map(v=>'('+v+')').join('')
+}
+
+
