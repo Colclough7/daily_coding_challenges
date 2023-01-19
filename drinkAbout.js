@@ -17,3 +17,12 @@ Examples: (Input --> Output)
 18 --> "drink beer"
 20 --> "drink beer"
 30 --> "drink whisky"*/
+
+
+
+function peopleWithAgeDrink(old) {
+  if(old < 14) return "drink toddy"
+  else if(old < 18) return "drink coke"
+  else if(old >= 18 && old <= 20) return "drink beer"
+  return "drink whisky"
+};
