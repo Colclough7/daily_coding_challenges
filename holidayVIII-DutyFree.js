@@ -9,3 +9,9 @@ the answer you should return would be 500.
 All inputs will be integers. Please return an integer. Round down.*/
 
 
+
+
+function dutyFree(normPrice, discount, hol){
+return Math.floor(hol/(normPrice*(discount/100)))
+}
+
