@@ -21,3 +21,12 @@ comp(a,b) returns false because in b 132 is not the square of any number of a.
 a = [121, 144, 19, 161, 19, 144, 19, 11]  
 b = [121, 14641, 20736, 36100, 25921, 361, 20736, 361]*/
 
+
+
+function comp(array1, array2){
+  //your code here
+  if(array1 == null || array2 == null) return false;
+  array1.sort((a, b) => a - b); 
+  array2.sort((a, b) => a - b);
+  return array1.map(v => v * v).every((v, i) => v == array2[i]);
+}
