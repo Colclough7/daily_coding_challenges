@@ -7,3 +7,9 @@ combineNames('James', 'Stevens')
 returns:
 
 'James Stevens'*/
+
+
+// Create the combineNames function here
+const combineNames = (firstName,lastName)=>{
+  return `${firstName} ${lastName}`
+}
