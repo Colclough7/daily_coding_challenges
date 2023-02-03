@@ -10,3 +10,14 @@ Example:
 calculator(1,2,"+"); //=> result will be 3
 calculator(1,2,"&"); //=> result will be "unknown value"
 calculator(1,"k","*"); //=> result will be "unknown value"*/
+
+
+
+
+unction calculator(a,b,sign){
+  try {
+    return eval(`${a} ${sign} ${b}`)
+  } catch (e) {
+    return 'unknown value'
+  }
+}
