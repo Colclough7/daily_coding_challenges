@@ -17,3 +17,18 @@ printer_error(s) => "0/14"
 
 s="aaaxbbbbyyhwawiwjjjwwm"
 printer_error(s) => "8/22"*/
+
+
+
+
+
+function printerError(str) {
+    // your code
+   let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] > 'm') {
+      count++;
+    }
+  }
+  return count + '/' + str.length;
+}
