@@ -17,3 +17,14 @@ Examples
 * Input: [2,2,1,2,1], output = [2,2,2,1]*/
 
 
+
+
+
+function removeSmallest(numbers) {
+  const copy = numbers.slice(0)
+ let smallestValue = numbers.indexOf(Math.min(...numbers))
+ copy.splice(smallestValue, 1);
+ return copy
+}
+
+
