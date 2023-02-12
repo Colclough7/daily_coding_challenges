@@ -7,3 +7,10 @@ digits. Be careful to avoid
 overflows/underflows.
 
 All inputs will be valid.*/
+
+
+
+function digits(n) {
+  // code goes here
+  return (''+n).length
+}
