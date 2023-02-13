@@ -6,3 +6,16 @@ the square of 11, than 100, the square of 10.
 If the n is already the perfect square (e.g. n = 144, n = 81, etc.), you need to just return n.*/
 
 
+
+function nearestSq(n){
+    // your code
+  return Math.pow(Math.round(Math.sqrt(n)),2)
+    
+}
+
+
+
+
+
+
+
