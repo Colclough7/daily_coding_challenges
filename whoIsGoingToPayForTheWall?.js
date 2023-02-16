@@ -7,3 +7,19 @@ he insists that his neighbors keep truncating their names until two letters rema
 
 Your code will show Full name of the neighbor and the truncated version of the name as an array. If the number of the characters 
 in name is less than or equal to two, it will return an array containing only the name as is"*/
+
+
+
+
+function whoIsPaying(name){
+  //your code here
+  let arr = []
+  if(name.length > 2) {
+    arr.push(name);
+    arr.push(name[0] + name[1]);
+    return arr;
+  } else {
+    arr.push(name);
+    return arr;
+  }
+}
