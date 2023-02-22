@@ -8,3 +8,12 @@ For example:
 solve("coDe") = "code". Lowercase characters > uppercase. Change only the "D" to lowercase.
 solve("CODe") = "CODE". Uppercase characters > lowecase. Change only the "e" to uppercase.
 solve("coDE") = "code". Upper == lowercase. Change all to lowercase.*/
+
+
+
+function solve(s){
+    //..
+  let up=s.split('').filter(v=>v.match(/[A-Z]/)).length
+    let down=s.split('').filter(v=>v.match(/[a-z]/)).length
+    return down>=up?s.toLowerCase():s.toUpperCase();
+}
