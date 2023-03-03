@@ -13,3 +13,17 @@ xbonacci {0,0,0,0,1} 10 = {0,0,0,0,1,1,2,4,8,16}
 xbonacci {1,0,0,0,0,0,1} 10 = {1,0,0,0,0,0,1,2,3,6}
 xbonacci {1,1} produces the Fibonacci sequence*/
 
+
+
+function Xbonacci(signature,n){
+  let arr = signature.slice(), sum;
+  for ( let i = 0; i < n-signature.length; i++ ) {
+    sum = 0;
+    for ( let j = i; j < i+signature.length; j++ ) {
+      sum += arr[j]
+    }
+    arr.push(sum)
+  }
+  return arr.slice(0, n);
+}
+
