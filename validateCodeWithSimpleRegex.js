@@ -3,4 +3,9 @@ The function should check if the code begins with 1, 2, or 3 and return true if 
 
 You can assume the input will always be a number.*/
 
-
+function validateCode (code) {
+//your code here
+  let codeStr = code + "";
+  let regex = /^[123]/;
+  return regex.test(codeStr);
+}
