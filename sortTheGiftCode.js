@@ -14,3 +14,13 @@ Examples (Input -- => Output):
 "pqksuvy"                     -- => "kpqsuvy"
 "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrstuvwxyz"*/
 
+
+
+
+
+
+
+function sortGiftCode(code){
+  //TODO 
+   return code.split('').sort().join('')
+}
