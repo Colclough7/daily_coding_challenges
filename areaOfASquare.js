@@ -4,3 +4,15 @@ Return the result rounded to two decimals.
 Graph
 
 Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)*/
+
+
+
+
+
+
+
+
+
+function squareArea(A){
+  return +Math.pow(2 * A / Math.PI, 2).toFixed(2)
+}
