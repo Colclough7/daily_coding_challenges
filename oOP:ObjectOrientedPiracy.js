@@ -29,3 +29,14 @@ to decide if the ship is worthy to loot. For example:
 
 titanic.isWorthIt() // return false
 Good luck and may you find GOOOLD!*/
+
+
+function Ship(draft,crew) {
+ this.draft = draft;
+ this.crew = crew;
+  this.isWorthIt = function(){
+    return this.draft - this.crew * 1.5 > 20
+  }
+}
+
+//YOUR CODE HERE...
