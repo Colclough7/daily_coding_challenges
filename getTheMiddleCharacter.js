@@ -18,3 +18,10 @@ You do not need to test for this. This is only here to tell you that you do not 
 #Output
 
 The middle character(s) of the word represented as a string.*/
+
+
+
+function getMiddle(s){
+  //Code goes here!
+   return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
