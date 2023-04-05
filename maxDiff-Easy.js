@@ -15,6 +15,6 @@ Have fun!*/
 
 function maxDiff(list) {
   if(list.length==1 || list==0) return 0
-  var x = list.sort(function(a,b){return a-b})
+  let x = list.sort(function(a,b){return a-b})
     return x[x.length-1]-x[0]
 };
