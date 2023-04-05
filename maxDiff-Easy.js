@@ -7,3 +7,14 @@ lst is not sorted
 [1, 2, 3, 4]   //  returns 3 because 4 -   1  == 3
 [1, 2, 3, -4]  //  returns 7 because 3 - (-4) == 7
 Have fun!*/
+
+
+
+
+
+
+function maxDiff(list) {
+  if(list.length==1 || list==0) return 0
+  var x = list.sort(function(a,b){return a-b})
+    return x[x.length-1]-x[0]
+};
