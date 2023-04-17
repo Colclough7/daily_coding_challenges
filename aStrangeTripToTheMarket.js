@@ -15,3 +15,10 @@ Note that the phrase can also be written as "3.50" or "three fifty". Your functi
 false otherwise.*/
 
 
+function isLockNessMonster(s) {
+  //FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
+  if(s.toLowerCase().includes('tree fiddy')) return true
+  if(s.toLowerCase().includes('three fifty')) return true
+  if(s.toLowerCase().includes('3.50')) return true
+  return false
+}
