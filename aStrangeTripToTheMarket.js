@@ -1,4 +1,4 @@
-You're on your way to the market when you hear beautiful music coming from a nearby street performer. 
+/*You're on your way to the market when you hear beautiful music coming from a nearby street performer. 
 The notes come together like you wouln't believe as the musician puts together patterns of tunes. 
 As you wonder what kind of algorithm you could use to shift octaves by 8 pitches or something silly like that, 
 it dawns on you that you have been watching the musician for some 10 odd minutes. You ask, 
@@ -12,6 +12,6 @@ B) it will ask you for tree fiddy.
 Since Nessie is a master of disguise, the only way accurately tell is to look for the phrase "tree fiddy". 
 Since you are tired of being grifted by this monster, the time has come to code a solution for finding The Loch Ness Monster. 
 Note that the phrase can also be written as "3.50" or "three fifty". Your function should return true if you're talking with The Loch Ness Moster, 
-false otherwise.
+false otherwise.*/
 
 
