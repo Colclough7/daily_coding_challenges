@@ -5,3 +5,10 @@ Examples:
 uniTotal("a") == 97
 uniTotal("aaa") == 291*/
 
+
+
+
+function uniTotal (string) {
+// total up dem unicodes!
+  return string.split('').reduce((prev,curr)=>prev + curr.charCodeAt(), 0)
+}
