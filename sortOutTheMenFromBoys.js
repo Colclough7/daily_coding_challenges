@@ -34,3 +34,26 @@ Since , {-282 , 818 , 900 , 928 } is the even numbers here , So it came first in
 Since , (Duplications are not included when separating) , then you can see only one (-282) was appeared in the final array/list .*/
 
 
+
+
+
+
+
+function menFromBoys(arr){
+  //your code here
+  let even = arr.filter(num=>num%2 === 0).sort((a,b)=>a-b)
+  let odd = arr.filter(num=>num%2 !== 0).sort((a,b)=>b-a)
+  let evenSet = [...new Set(even)]
+  let oddSet = [...new Set(odd)]
+  return [...evenSet,...oddSet]
+}
+
+
+
+
+
+
+
+
+
+
