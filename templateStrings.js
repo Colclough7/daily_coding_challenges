@@ -6,3 +6,8 @@ Input
 Two Strings, no validation is needed.
 Output
 You must output a string containing the two strings with the word ```' are '```*/
+
+
+let TempleStrings = function(obj, feature) {
+  return `${obj} are ${feature}`
+}
