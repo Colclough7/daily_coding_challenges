@@ -4,3 +4,8 @@ Example:
 
 get_char(65)
 should return: 'A'*/
+
+function getChar(c){
+  // ...
+  return String.fromCharCode(c)
+}
