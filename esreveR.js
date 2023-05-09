@@ -6,8 +6,11 @@
 
 
 
-
 let reverse = function(array) {
   // TODO: program me!
-  return array.reverse()
+  let results = []
+  for(let i = array.length - 1; i >= 0; i--){
+    results.push(array[i])
+  }
+  return results
 }
