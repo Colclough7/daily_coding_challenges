@@ -11,3 +11,11 @@ You are using a library that already has the functions below. Create a function 
 - rollDice
 - move*/
 
+var health = 100
+var position = 0
+var coins = 0
+
+const main = () =>
+  [rollDice, move, combat, getCoins, buyHealth, printStatus].forEach(action =>
+    action()
+  )
