@@ -13,3 +13,8 @@ Examples(num, nth --> output)
 65, 0 --> -1
 24, -8 --> -1*/
 
+var findDigit = function(num, nth){
+     if (nth<=0) return -1;
+    let nums=(''+Math.abs(num));
+    return nums.slice(nums.length-nth,nums.length-nth+1)*1;
+}
