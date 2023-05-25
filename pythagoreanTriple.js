@@ -18,3 +18,24 @@ For Python: return True or False
 For JavaScript: return true or false
 Other languages: return 1 or 0 or refer to Sample Tests.*/
 
+
+
+
+function isPythagoreanTriple(integers) {
+  // Good luck friends!
+  let a = integers[0];
+ let b = integers[1];
+ let c = integers[2];
+ 
+ let aSqaure = a*a;
+ let bSqaure = b*b;
+ let cSqaure = c*c;
+  
+  if ( aSqaure + bSqaure == cSqaure) {
+    return true;
+  } else if (bSqaure + cSqaure == aSqaure) {
+    return true;
+  } else if (aSqaure + cSqaure == bSqaure) {
+    return true;
+  } else { return false }
+}
