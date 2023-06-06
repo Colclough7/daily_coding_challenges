@@ -9,3 +9,17 @@ Good Luck!
 
 Note
 1 Dollar = 100 Cents*/
+
+
+
+
+function fuelPrice(litres, pricePerLitre) {
+  // your code here
+  // Good luck with it!
+  for(let i = 2;i <= 10;i += 2){
+    if(litres >= i){
+      pricePerLitre -= .05
+    }
+  }
+  return +(litres * pricePerLitre).toFixed(2)
+}
