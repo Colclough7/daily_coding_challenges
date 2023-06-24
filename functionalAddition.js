@@ -7,3 +7,10 @@ addOne(3); // 4
 
 var addThree = add(3);
 addThree(3); // 6*/
+
+
+function add(n) {
+  return function (m) {
+    return n+m;
+  }
+}
